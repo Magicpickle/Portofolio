@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: black;
+  min-height: 200vh;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: black;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #555;
+  transition-duration: 0.3s;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #c29d5c;
+}
+header {
+  min-height: 5px;
+  max-height: 10vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  background-color: black;
+}
+
+.list {
+  /* width: 85vw; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.picture {
+  width: 7%;
+  height: 10%;
+  padding-top: 5px;
+}
+
+.picture img {
+  max-width: 100%;
+}
+
+li {
+  margin: 8vw;
+}
+a {
+  color: white;
+  font-size: 150%;
+}
+.homelist {
+  display: flex;
+  align-items: center;
+}
+.home {
+  margin-right: 50px;
+}
+
+nav {
+  display: grid;
+  place-items: center;
+}
+
+.linear-line {
+  height: 10px;
+  width: 85vw;
+  margin-left: 10vw;
+  background: linear-gradient(
+    90deg,
+    rgba(185, 127, 36, 0.3906) 0%,
+    rgba(191, 149, 83, 0.62) 21.15%,
+    rgba(205, 199, 217, 0.62) 40.94%,
+    rgba(150, 123, 182, 0.62) 61.25%,
+    rgba(102, 54, 157, 0.62) 81.04%,
+    rgba(82, 40, 136, 0.4588) 100%
+  );
+  border-radius: 30px 0px 30px 0px;
+}
+
+picture {
+  background-image: url("../img/108959-purple-wave-png-free-photo.png");
+  background-size: cover;
+  width: 100vw;
+  height: 40vh;
+  position: absolute;
+  bottom: 0;
+}
+
+footer {
+  margin-top: auto;
+}
+
+footer img {
+  width: 100vw;
+}
+.firstprev {
+  display: flex;
+  align-self: center;
+  justify-content: space-between;
+  align-items: center;
+  height: 400px;
+  width: 75%;
+  /* background-color: aliceblue; */
+}
+
+.foto {
+  background-image: url("../img/code.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 45%;
+  height: 300px;
+  box-shadow: inset 0px 4px 50px 30px rgba(0, 0, 0, 0.75);
+}
+.arrownxpt {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-end;
+  height: 20px;
+  text-decoration: none;
+}
+
+.arrownxpt p {
+  color: #c29d5c;
+}
+
+.arrowimg img {
+  height: 40px;
+}
+.arrowimg {
+  margin-top: -20px;
+}
+.text {
+  color: white;
+  height: fit-content;
+  width: 45%;
+  font-size: 30px;
+  font-family: "Raleway", sans-serif;
+}
