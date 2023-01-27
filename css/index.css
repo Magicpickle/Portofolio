@@ -9,6 +9,8 @@ body {
   display: flex;
   flex-direction: column;
   overflow-x: hidden;
+  display: flex;
+  justify-content: center;
 }
 /* width */
 ::-webkit-scrollbar {
@@ -50,8 +52,9 @@ header {
 ul {
   list-style: none;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
+  flex-grow: 1;
   height: 100%;
 }
 .picture {
@@ -65,7 +68,7 @@ ul {
 }
 
 li {
-  margin: 8vw;
+  /* margin: 8vw; */
 }
 a {
   color: white;
@@ -151,6 +154,7 @@ footer img {
 }
 .arrowimg {
   margin-top: -20px;
+  margin-left: -5px;
 }
 .text {
   color: white;
