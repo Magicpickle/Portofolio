@@ -119,6 +119,15 @@ footer img {
   /* background-color: aliceblue; */
 }
 
+.secondprev {
+  display: flex;
+  /* justify-content: center; */
+  justify-content: space-around;
+  align-items: center;
+  height: 50vh;
+  width: 100vw;
+}
+
 .purplewave {
   background: url("../img/108959-purple-wave-png-free-photo.svg");
   background-position: bottom;
@@ -138,12 +147,10 @@ footer img {
   background-image: url("../img/Arrow.svg");
   background-repeat: no-repeat;
   background-size: contain;
-  
-  /* border: 1px solid #c29d5c; */
   border-radius: 100%;
 }
 
-.foto {
+.foto1st {
   background-image: url("../img/code.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -151,6 +158,16 @@ footer img {
   height: 300px;
   box-shadow: inset 0px 4px 50px 30px rgba(0, 0, 0, 0.75);
 }
+
+.foto2nd {
+  background-image: url("../img/my\ website.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 45%;
+  height: 300px;
+  box-shadow: inset 0px 4px 50px 30px rgba(0, 0, 0, 0.75);
+}
+
 .arrownxpt {
   display: flex;
   flex-direction: column;
@@ -173,7 +190,7 @@ footer img {
 .text {
   color: white;
   height: fit-content;
-  width: 45%;
+  width: 40%;
   font-size: 30px;
   font-family: "Raleway", sans-serif;
 }
