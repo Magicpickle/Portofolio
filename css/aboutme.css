@@ -172,7 +172,7 @@ footer {
   border-radius: 100%;
 }
 
-.foto1st img{
+.foto1st img {
   /* background-image: url("../img/code.jpg"); */
   /* margin-right: 300px; */
   background-repeat: no-repeat;
@@ -182,11 +182,10 @@ footer {
   box-shadow: inset 0px 4px 50px 30px rgba(0, 0, 0, 0.75);
 }
 
-.foto2nd {
-  background-image: url("../img/my\ website.jpg");
+.foto2nd img {
   background-repeat: no-repeat;
   background-size: cover;
-  width: 45%;
+  width: 500px;
   height: 300px;
   box-shadow: inset 0px 4px 50px 30px rgba(0, 0, 0, 0.75);
 }
@@ -221,18 +220,22 @@ footer {
 footer {
   background-image: url(../img/main-background-color+footer.png);
   background-size: 100% 100%;
-  width: 100vw;
-  height: 40vh;
-}
-
-/* .socials{
+  flex-grow: 0.7;
   display: flex;
   justify-content: center;
+  /* align-items: center; */
 }
 
-.twitter{
-  background-image: url(../img/);
+footer ul {
+  display: flex;
+  justify-content: space-around;
+  width: 20%;
+  list-style: none;
+}
+
+footer ul li img {
   height: 50px;
-  width: 50px;
-  
-} */
+  border-radius: 100%;
+  border: 2px solid black;
+  margin-left: ;
+}
