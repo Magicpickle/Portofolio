@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/work.css" />
-    <title>Document</title>
+    <link rel="icon" href="img/logo.png">
+    <title>Maik Hendriks - Work</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -16,24 +17,24 @@
   <body>
     <header>
       <div class="picture">
-        <img src="img/logo.png" alt=".." />
+        <img src="img/logo.png" alt="Logo" />
       </div>
       <div class="list">
         <ul>
           <li><a class="aboutme" href="aboutme.html">About me</a></li>
-          <li><a class="work" href="work.html">Workddd</a></li>
+          <li><a class="work" href="work.html">Work</a></li>
           <li><a class="contact" href="contact.html">Contact</a></li>
         </ul>
       </div>
       <div class="homelist">
-        <a class="home">Home</a>
+        <a class="home" href="index.html">Home</a>
       </div>
     </header>
     <nav>
       <div class="linear-line"></div>
     </nav>
     <div class="firstprev">
-      <div class="foto"></div>
+      <div class="foto1st"></div>
       <a href="#" class="arrownxpt">
         <p>more</p>
         <div class="arrowimg">
@@ -46,10 +47,27 @@
         and tools.
       </div>
     </div>
-    <!-- <picture></picture> -->
+    <div class="purplewave">
+      <a onclick="scrollWin()"><div class="scrollarrow"></div></a>
+    </div>
+    <div class="secondprev">
+      <div class="text">
+        My previous website had a sort of spacy design in it. It was a bit
+        simple but was still one of my early works. As i keep getting better
+        this website you’re on.. I'm really proud to say it’s mine!
+      </div>
+      <div class="foto2nd"></div>
+    </div>
     <footer>
-      <img src="/img/main-background-color+footer.png" alt="to bad" />
-      <div class="social"></div>
+      <div class="socials">
+        <div class="twitter"></div>
+        <div class="instagram"></div>
+      </div>
     </footer>
   </body>
+  <script>
+    function scrollWin() {
+      window.scrollBy(0, 1000);
+    }
+    </script>
 </html>

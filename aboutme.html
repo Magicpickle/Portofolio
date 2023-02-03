@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/aboutme.css" />
-    <title>About Me</title>
+    <link rel="icon" href="img/logo.png">
+    <title>Maik Hendriks - About Me</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -16,40 +17,71 @@
   <body>
     <header>
       <div class="picture">
-        <img src="img/logo.png" alt=".." />
+        <img src="img/logo.png" alt="Logo" />
       </div>
       <div class="list">
         <ul>
-          <li><a class="aboutme">About me</a></li>
+          <li><a class="aboutme" href="aboutme.html">About me</a></li>
           <li><a class="work" href="work.html">Work</a></li>
           <li><a class="contact" href="contact.html">Contact</a></li>
         </ul>
       </div>
       <div class="homelist">
-        <a href="index.html" class="home">Home</a>
+        <a class="home" href="index.html">Home</a>
       </div>
     </header>
     <nav>
       <div class="linear-line"></div>
     </nav>
     <div class="firstprev">
-      <div class="foto"></div>
-      <a href="aboutme.html" class="arrownxpt">
+      <!-- <a href="#" class="arrownxpt">
         <p>more</p>
         <div class="arrowimg">
           <img src="/img/thin-long-arrow-right-icon.svg" alt="" />
         </div>
-      </a>
-      <div class="text">
-        I’m gonna be a future Software Developer. Doing things such as design,
-        program, build, deploy and maintain software using many different skills
-        and tools.
+      </a> -->
+      <ul>
+        <li>
+          My name is Maik Hendriks I’m 15 years old and I’m currently learning
+          to be a software developer in college.
+        </li>
+        <br />
+        <li>
+          My music taste is metal, rock and hardcore/uptempo. I’ve been to a few
+          metal concerts before of Bury Tomorrow, Enter Shikari and Stick to
+          your guns.
+        </li>
+        <br />
+        <li>
+          My favorite food has to be spareribs or a good chicken wrap. I also
+          love cooking as much as eating food.
+        </li>
+      </ul>
+      <div class="foto1st">
+        <img src="./img/code.jpg" alt="..">
       </div>
     </div>
-    <!-- <picture></picture> -->
+    <div class="purplewave">
+      <a onclick="scrollWin()"><div class="scrollarrow"></div></a>
+    </div>
+    <div class="secondprev">
+      <div class="text">
+        My previous website had a sort of spacy design in it. It was a bit
+        simple but was still one of my early works. As i keep getting better
+        this website you’re on.. I'm really proud to say it’s mine!
+      </div>
+      <div class="foto2nd"></div>
+    </div>
     <footer>
-      <img src="/img/main-background-color+footer.png" alt="to bad" />
-      <div class="social"></div>
+      <div class="socials">
+        <div class="twitter"></div>
+        <div class="instagram"></div>
+      </div>
     </footer>
   </body>
+  <script>
+    function scrollWin() {
+      window.scrollBy(0, 1000);
+    }
+  </script>
 </html>
