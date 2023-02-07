@@ -70,15 +70,12 @@ header ul {
 }
 
 .picture {
-  width: 7%;
-  height: 10%;
-  padding-top: 5px;
+  margin-top: 0.5%;
 }
 
 .picture img {
-  max-width: 100%;
+  width: 10vh;
 }
-
 header ul li {
   font-family: "Raleway", sans-serif;
 }
