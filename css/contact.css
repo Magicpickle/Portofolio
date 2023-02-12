@@ -7,6 +7,7 @@
 body {
   background-color: black;
   min-height: 200vh;
+  width: 100vw;
   display: flex;
   flex-direction: column;
   overflow-x: hidden;
@@ -20,7 +21,7 @@ body {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: black;
+  background: transparent;
 }
 
 /* Handle */
@@ -31,16 +32,7 @@ body {
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  /* background: #c29d5c; */
-  background: linear-gradient(
-    90deg,
-    rgba(185, 127, 36, 0.3906) 0%,
-    rgba(191, 149, 83, 0.62) 21.15%,
-    rgba(205, 199, 217, 0.62) 40.94%,
-    rgba(150, 123, 182, 0.62) 61.25%,
-    rgba(102, 54, 157, 0.62) 81.04%,
-    rgba(82, 40, 136, 0.4588) 100%
-  );
+  background: #c29d5c;
 }
 header {
   max-height: 10vh;
@@ -68,13 +60,11 @@ header ul {
 }
 
 .picture {
-  width: 7%;
-  height: 10%;
-  padding-top: 5px;
+  margin-top: 0.5%;
 }
 
 .picture img {
-  max-width: 100%;
+  width: 10vh;
 }
 
 header ul li {
@@ -96,7 +86,7 @@ a {
   margin-right: 50px;
 }
 
-.aboutme {
+.contact {
   text-decoration: underline;
 }
 
@@ -129,14 +119,6 @@ nav {
   width: 100vw;
 }
 
-.firstprev ul {
-  list-style: none;
-  max-width: 30vw;
-}
-.firstprev ul li {
-  color: white;
-  font-size: 20px;
-}
 .secondprev {
   display: flex;
   /* justify-content: center; */
@@ -187,24 +169,84 @@ nav {
   margin-bottom: 6vh;
   background-color: black;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
 }
 
-.laptop .blackbox .message{
+.blackbox h1 {
   color: white;
-  background-color: grey;
-  width: 75%;
-  height: 40%;
+}
+
+#email {
+  width: 60%;
+  padding: 1em;
+  border: 1px solid transparent;
+  border-radius: 30px;
+  outline: none;
+  resize: none;
+  background-color: #303030;
+  color: white;
+}
+
+.blackbox form {
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+}
+
+form > * {
+  width: 40%;
+  padding: 1em;
+  border: 1px solid transparent;
+  border-radius: 30px;
+  outline: none;
+  resize: none;
+  background-color: #303030;
+  color: white;
+}
+
+textarea[name="message"] {
+  /* min-height: 100px; */
+  width: 80%;
+  flex-grow: 0.8;
+  padding: 1em;
+  border: 1px solid transparent;
+  border-radius: 30px;
+  outline: none;
+  resize: none;
+  background-color: #303030;
+  color: white;
+}
+
+.send {
+  align-self: flex-end;
+  width: 17.5%;
+  height: 10%;
+  background-color: #303030;
   border-radius: 30px;
   display: flex;
+  align-items: center;
   justify-content: center;
-  align-self: flex-end;
+  color: #c2c2c2;
+  font-size: 1.2em;
+  margin-right: 8.5%;
+}
+
+.send:hover {
+  cursor: pointer;
+}
+
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #c2c2c2;
+  opacity: 1; /* Firefox */
 }
 
 @media only screen and (max-width: 450px) {
-  .laptop{
+  .laptop {
     background-image: url("../img/phone.png");
-
+    width: 100vw;
   }
 }
 
@@ -220,6 +262,7 @@ nav {
   display: flex;
   flex-direction: column;
   align-self: flex-end;
+  position: absolute;
   height: 20px;
   text-decoration: none;
 }

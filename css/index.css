@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  color: white;
   font-family: "Raleway", sans-serif;
 }
 
@@ -21,7 +22,7 @@ body {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: black;
+  background: transparent;
 }
 
 /* Handle */
@@ -32,16 +33,7 @@ body {
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  /* background: #c29d5c; */
-  background: linear-gradient(
-    90deg,
-    rgba(185, 127, 36, 0.3906) 0%,
-    rgba(191, 149, 83, 0.62) 21.15%,
-    rgba(205, 199, 217, 0.62) 40.94%,
-    rgba(150, 123, 182, 0.62) 61.25%,
-    rgba(102, 54, 157, 0.62) 81.04%,
-    rgba(82, 40, 136, 0.4588) 100%
-  );
+  background: #c29d5c;
 }
 
 header {
@@ -82,7 +74,6 @@ header ul li {
 
 a {
   text-decoration: none;
-  color: white;
   font-size: 150%;
 }
 
@@ -119,27 +110,21 @@ nav {
 
 .firstprev {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
   height: 50vh;
   width: 100vw;
 }
-
-.firstprev ul {
-  list-style: none;
-  max-width: 30vw;
+.text {
+  width: 21vw;
+  font-size: 1.5rem;
 }
-.firstprev ul li {
-  color: white;
-  font-size: 20px;
-}
-.secondprev {
-  display: flex;
-  /* justify-content: center; */
-  justify-content: space-around;
-  align-items: center;
-  height: 50vh;
-  width: 100vw;
+.foto1st img {
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 500px;
+  height: 300px;
+  box-shadow: inset 0px 4px 50px 30px rgba(0, 0, 0, 0.75);
 }
 
 .purplewave {
@@ -164,16 +149,18 @@ nav {
   border-radius: 100%;
 }
 
-.foto1st img {
-  /* background-image: url("../img/code.jpg"); */
-  /* margin-right: 300px; */
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 500px;
-  height: 300px;
-  box-shadow: inset 0px 4px 50px 30px rgba(0, 0, 0, 0.75);
+.secondprev {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 50vh;
+  width: 100vw;
 }
-
+.secondprev .text {
+  height: fit-content;
+  width: 30vw;
+  font-size: 1.5rem;
+}
 .foto2nd img {
   background-repeat: no-repeat;
   background-size: cover;
@@ -186,6 +173,7 @@ nav {
   display: flex;
   flex-direction: column;
   align-self: flex-end;
+  position: absolute;
   height: 20px;
   text-decoration: none;
 }
@@ -201,13 +189,6 @@ nav {
   margin-top: -20px;
   margin-left: -5px;
 }
-.text {
-  color: white;
-  height: fit-content;
-  width: 40%;
-  font-size: 30px;
-  font-family: "Raleway", sans-serif;
-}
 
 footer {
   background-image: url(../img/main-background-color+footer.png);
@@ -220,7 +201,6 @@ footer {
 }
 
 .socials {
-  color: white;
   font-size: 20px;
   width: 100px;
   height: auto;

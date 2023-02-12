@@ -23,7 +23,7 @@
         <ul>
           <li><a class="aboutme" href="aboutme.html">About me</a></li>
           <li><a class="work" href="work.html">Work</a></li>
-          <li><a class="contact" href="contact.html">Contact</a></li>
+          <li><a class="contact">Contact</a></li>
         </ul>
       </div>
       <div class="homelist">
@@ -36,9 +36,42 @@
     <div class="firstprev">
       <div class="laptop">
         <div class="blackbox">
-          <div class="message">Write your message</div>
+          <h1>Contact</h1>
+          <input
+            type="text"
+            id="email"
+            name="email"
+            placeholder="“example@mail.com”"
+            required
+          />
+          <form>
+            <input
+              type="text"
+              id="fname"
+              name="fname"
+              placeholder="Your full name"
+              required
+            /><br />
+            <input
+              type="text"
+              id="subject"
+              name="subject"
+              placeholder="Subject"
+              required
+            /><br />
+          </form>
+
+          <textarea
+            name="message"
+            id="msg"
+            cols="30"
+            rows="10"
+            placeholder="Write your message.."
+            required
+          ></textarea>
+
+          <div class="send">send</div>
         </div>
-        
       </div>
       <!-- <a href="#" class="arrownxpt">
         <p>more</p>
