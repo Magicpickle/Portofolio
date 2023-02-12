@@ -19,15 +19,25 @@
       <div class="picture">
         <img src="img/logo.png" alt="Logo" />
       </div>
-      <div class="list">
-        <ul>
-          <li><a class="aboutme" href="aboutme.html">About me</a></li>
-          <li><a class="work" href="work.html">Work</a></li>
-          <li><a class="contact" href="contact.html">Contact</a></li>
+      <div class="navbar">
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a class="aboutme" href="aboutme.html">About me</a>
+          </li>
+          <li class="nav-item"><a class="work" href="work.html">Work</a></li>
+          <li class="nav-item">
+            <a class="contact" href="contact.html">Contact</a>
+          </li>
+          <li class="nav-item">
+            <div class="home" href="index.html">Home</div>
+          </li>
         </ul>
       </div>
-      <div class="homelist">
-        <a class="home">Home</a>
+      <div class="burgermenu">
+        <!-- <img src="img/burgermenu.png" alt="Oops" /> -->
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
       </div>
     </header>
     <nav>
@@ -56,15 +66,21 @@
       <div class="text">
         My previous website had a sort of spacy design in it. It was a bit
         simple but was still one of my early works. As i keep getting better
-        this website you’re on.. I'm really proud to say it’s mine!
+        this website you're on.. I'm really proud to say it's mine!
       </div>
+      <a href="work.html" class="arrownxpt">
+        <p>more</p>
+        <div class="arrowimg">
+          <img src="/img/thin-long-arrow-right-icon.svg" alt="" />
+        </div>
+      </a>
       <div class="foto2nd">
         <img src="./img/my website.jpg" alt="Oops" />
       </div>
     </div>
     <footer>
       <ul>
-        <div class="socials">My socials</div>
+        <p class="socials">My socials</p>
         <a href="https://twitter.com/home">
           <li class="twitter">
             <img src="./img/Twitter-logo-purple-PNG.png" alt="Oops" />
@@ -89,9 +105,5 @@
       </ul>
     </footer>
   </body>
-  <script>
-    function scrollWin() {
-      window.scrollBy(0, 3000);
-    }
-  </script>
+  <script src="js/script.js"></script>
 </html>
