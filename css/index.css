@@ -141,12 +141,13 @@ nav {
 
 .scrollarrow {
   margin-top: 80px;
-  width: 100px;
-  height: 100px;
   background-image: url("../img/Arrow.svg");
   background-repeat: no-repeat;
   background-size: contain;
-  border-radius: 100%;
+  width: 100%;
+  height: 100%;
+  width: 4.5rem;
+  height: 4.5rem;
 }
 
 .secondprev {

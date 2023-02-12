@@ -39,7 +39,7 @@ header {
   max-height: 10vh;
   width: 100vw;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   background-color: black;
 }
 
@@ -65,7 +65,7 @@ header ul {
 }
 
 .picture img {
-  width: 10vh;
+  width: 9vh;
 }
 
 header ul li {
@@ -143,12 +143,13 @@ nav {
 
 .scrollarrow {
   margin-top: 80px;
-  width: 100px;
-  height: 100px;
   background-image: url("../img/Arrow.svg");
   background-repeat: no-repeat;
   background-size: contain;
-  border-radius: 100%;
+  width: 100%;
+  height: 100%;
+  width: 4.5rem;
+  height: 4.5rem;
 }
 
 .laptop {
@@ -324,14 +325,26 @@ footer ul li img {
 
 
 @media only screen and (max-width: 450px) {
-  body{
-    overflow-x: hidden;
+  header{
+
+  }
+  .burgermenu{
+    /* justify-self: center; */
+    align-self: center;
+  }
+  .burgermenu img{
+    /* background-color: white; */
+    /* color: white; */
+    filter: brightness(0) invert(1);
+    height: 5vh;
+    width: 70%;
+  
   }
 
   .laptop {
     background-image: url("../img/phone.png");
     width: 100vw;
-    margin-top: -3vh;
+    margin-top: -1vh;
   }
   .laptop .blackbox {
     width: 50vw;
@@ -355,6 +368,10 @@ footer ul li img {
     width: 90%;
     margin-left: 0.5vw;
   }
+  .send{
+    width: 40%;
+    margin: 0;
+  }
 
   .purplewave{
     background-position: bottom;
@@ -374,10 +391,12 @@ footer ul li img {
   }
 
   .firstprev{
-    height: 75vh;
+    height: 70vh;
   }
-  .firstprev .scrollarrow{
-    height: 60px;
+  .scrollarrow{
+    margin-top: 40px;
+    width: 3rem;
+    height: 3rem;
   }
 
 }
