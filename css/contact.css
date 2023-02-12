@@ -13,6 +13,7 @@ body {
   overflow-x: hidden;
   display: flex;
   justify-content: center;
+  scroll-behavior: smooth;
 }
 /* width */
 ::-webkit-scrollbar {
@@ -323,6 +324,10 @@ footer ul li img {
 
 
 @media only screen and (max-width: 450px) {
+  body{
+    overflow-x: hidden;
+  }
+
   .laptop {
     background-image: url("../img/phone.png");
     width: 100vw;
