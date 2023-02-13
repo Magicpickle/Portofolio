@@ -3,6 +3,8 @@
   padding: 0;
   color: white;
   font-family: "Raleway", sans-serif;
+  text-decoration: none;
+  list-style: none;
 }
 
 body {
@@ -19,6 +21,10 @@ body {
   width: 10px;
 }
 
+.firstprev::-webkit-scrollbar {
+  width: 10px;
+}
+
 /* Track */
 ::-webkit-scrollbar-track {
   background: transparent;
@@ -27,7 +33,7 @@ body {
 /* Handle */
 ::-webkit-scrollbar-thumb {
   background: #555;
-  transition-duration: 0.3s;
+  border-radius: 8px;
 }
 
 /* Handle on hover */
@@ -35,54 +41,45 @@ body {
   background: #c29d5c;
 }
 header {
-  max-height: 10vh;
-  width: 100vw;
   display: flex;
-  justify-content: center;
-  background-color: black;
+  height: 10vh;
 }
 
-.list {
-  /* width: 85vw; */
+.navbar {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
 }
-
-header ul {
-  list-style: none;
+.nav-menu {
   display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  flex-grow: 1;
-  height: 100%;
+  justify-content: space-between;
+  width: 60%;
 }
 
+.burgermenu {
+  display: none;
+}
+.bar {
+  display: none;
+}
 .picture {
   margin-top: 0.5%;
+  /* width: 9vw; */
 }
 
 .picture img {
-  width: 10vh;
+  width: 9vh;
 }
 
-a, .aboutme {
+a,
+.aboutme {
   text-decoration: none;
   font-size: 150%;
   transition: 0.3s ease;
 }
-a:hover{
-  color: white;
-}
-
-.homelist {
-  display: flex;
-  align-items: center;
-}
-
-.home {
-  margin-right: 50px;
+a:hover {
+  color: #303030;
 }
 
 .aboutme {
@@ -96,8 +93,7 @@ nav {
 
 .linear-line {
   height: 1.2vh;
-  width: 85vw;
-  margin-left: 10vw;
+  width: 70vw;
   background: linear-gradient(
     90deg,
     rgba(185, 127, 36, 0.3906) 0%,
@@ -118,31 +114,29 @@ nav {
   width: 100vw;
 }
 
-.firstprev ul {
-  list-style: none;
-  max-width: 30vw;
-}
-.firstprev ul li {
+.text {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  width: 40vw;
   font-size: 1.5rem;
+  gap: 1rem;
 }
 
-.firstprev .container{
+.container {
   width: 27.5vw;
   display: flex;
   flex-direction: column;
   gap: 2rem;
 }
 .foto1st img {
-  background-repeat: no-repeat;
-  background-size: cover;
   border-radius: 5px;
   width: 100%;
-  height: 30vh;
+  height: auto;
   box-shadow: inset 0px 4px 50px 30px rgba(0, 0, 0, 0.75);
 }
-.firstprev .container p{
-  font-size: 20px;
-  /* height: 10vh; */
+.container p {
+  font-size: 1.25rem;
 }
 
 .purplewave {
@@ -175,10 +169,13 @@ nav {
   height: 50vh;
   width: 100vw;
 }
-.text {
-  height: fit-content;
-  width: 30vw;
+.secondprev .text {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  width: 40vw;
   font-size: 1.5rem;
+  gap: 1rem;
 }
 .foto2nd img {
   background-repeat: no-repeat;
@@ -229,7 +226,6 @@ footer ul {
   gap: 1em;
 }
 .socials {
-  color: white;
   font-size: 20px;
 }
 footer ul li img {
@@ -237,6 +233,7 @@ footer ul li img {
   border-radius: 100%;
   border: 2px solid black;
 }
+
 @media only screen and (max-width: 550px) {
   .list {
     display: none;
@@ -317,7 +314,6 @@ footer ul li img {
     gap: 1em;
   }
   .socials {
-    color: white;
     font-size: 15px;
   }
   footer ul li img {
@@ -329,14 +325,27 @@ footer ul li img {
   .firstprev {
     height: 69vh;
     flex-direction: column;
+    justify-content: unset;
+    gap: 3rem;
+  }
+  .text{
+    width: 75vw;
+    font-size: 1rem;
+    margin-top: 3vh;
+  }
+
+  .container{
+    gap: 1rem;
+    align-items: center;
+    width: 75vw
+  }
+  .container p{
+    width: 100%;
+    font-size: 1rem;
   }
   .foto1st img {
-    width: 85vw;
+    width: 100%;
     height: auto;
-  }
-  .firstprev .text {
-    width: 85vw;
-    font-size: 1.5em;
   }
 
   .secondprev {

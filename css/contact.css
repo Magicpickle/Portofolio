@@ -6,7 +6,6 @@
   color: white;
   list-style: none;
 }
-
 body {
   background-color: black;
   min-height: 200vh;
@@ -15,6 +14,13 @@ body {
   overflow-x: hidden;
   display: flex;
   justify-content: center;
+}
+
+body.active {
+  background-color: white;
+}
+*.active {
+  color: black;
 }
 /* width */
 ::-webkit-scrollbar {
@@ -114,14 +120,6 @@ nav {
   width: 100vw;
 }
 
-.secondprev {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  height: 50vh;
-  width: 100vw;
-}
-
 .purplewave {
   background: url("../img/108959-purple-wave-png-free-photo.svg");
   background-position: bottom;
@@ -170,7 +168,6 @@ nav {
 }
 
 .blackbox h1 {
-  color: white;
 }
 
 #email {
@@ -181,24 +178,22 @@ nav {
   outline: none;
   resize: none;
   background-color: #303030;
-  color: white;
 }
 
 .blackbox form {
   width: 80%;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 
 form > * {
-  width: 40%;
+  width: 45%;
   padding: 1em;
   border: 1px solid transparent;
   border-radius: 30px;
   outline: none;
   resize: none;
   background-color: #303030;
-  color: white;
 }
 
 textarea[name="message"] {
@@ -210,7 +205,6 @@ textarea[name="message"] {
   outline: none;
   resize: none;
   background-color: #303030;
-  color: white;
 }
 
 .send {
@@ -237,27 +231,35 @@ textarea[name="message"] {
   opacity: 1; /* Firefox */
 }
 
-.foto2nd img {
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 500px;
-  height: 300px;
-  box-shadow: inset 0px 4px 50px 30px rgba(0, 0, 0, 0.75);
+.secondprev {
+  display: flex;
+  align-items: center;
+  height: 50vh;
+  width: 100vw;
+}
+.box1 {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
+.box1 img {
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: auto;
+  height: 25vh;
+  border-radius: 5px;
+}
 .arrownxpt {
   display: flex;
   flex-direction: column;
   align-self: flex-end;
-  position: absolute;
-  height: 20px;
-  text-decoration: none;
 }
-
 .arrownxpt p {
   color: #c29d5c;
 }
-
 .arrowimg img {
   height: 40px;
 }
@@ -266,11 +268,32 @@ textarea[name="message"] {
   margin-left: -5px;
 }
 .text {
-  color: white;
-  height: fit-content;
-  width: 40%;
-  font-size: 30px;
+  width: 35%;
+  font-size: 1.5rem;
+  height: 50%;
   font-family: "Raleway", sans-serif;
+}
+.box2{
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.foto2nd {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.foto img {
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: auto;
+  height: 25vh;
+  border-radius: 5px;
 }
 
 footer {
@@ -293,12 +316,7 @@ footer ul {
   gap: 1em;
 }
 .socials {
-  color: white;
   font-size: 20px;
-  /* margin-left: 50%; */
-  /* left: 7.0%; */
-  /* margin-top: 10.5%;
-  margin-right: 1%; */
 }
 footer ul li img {
   height: 50px;
@@ -349,6 +367,7 @@ footer ul li img {
     text-align: center;
     transition: 0.3s;
     z-index: 100;
+    box-shadow: 0px 2px 57px 12px rgba(0, 0, 0, 0.4);
   }
 
   .nav-item {
@@ -359,11 +378,11 @@ footer ul li img {
     left: 0;
   }
 
-  .picture.active{
+  .picture.active {
     z-index: 101;
     position: fixed;
   }
-  
+
   .laptop {
     background-image: url("../img/phone.png");
     min-width: 100vw;
@@ -377,14 +396,13 @@ footer ul li img {
   }
   #email {
     width: 90%;
-    margin-left: 0.5vw;
     padding: 0.5em;
   }
   .blackbox form {
     flex-direction: column;
     width: 100%;
     align-items: center;
-    /* margin-right: 1vw; */
+    gap: 1rem;
   }
   form > * {
     width: 90%;
@@ -392,8 +410,6 @@ footer ul li img {
   }
   textarea[name="message"] {
     width: 90%;
-    margin-left: 0.5vw;
-    padding: 0.5em;
   }
   .send {
     width: 40%;
@@ -409,8 +425,40 @@ footer ul li img {
     align-items: center;
   }
 
-  .secondprev .text {
-    display: none;
+  .secondprev {
+    flex-direction: column;
+    margin-top: 5vh;
+    height: 80vh;
+    gap: 2rem;
+  }
+  .box1 {
+    flex-direction: column;
+    width: 100%;
+    height: 50%;
+    gap: 1rem;
+  }
+  .foto2nd img {
+    width: 75vw;
+    height: auto;
+  }
+
+  .text {
+    font-size: 1rem;
+    width: 75vw;
+    height: auto;
+  }
+
+  .box2 {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 50%;
+    gap: 1rem;
+    order: -1;
+  }
+  .foto img {
+    width: 75vw;
+    height: auto;
   }
 
   footer {
@@ -425,13 +473,18 @@ footer ul li img {
     gap: 1em;
   }
   .socials {
-    color: white;
     font-size: 15px;
   }
   footer ul li img {
     height: 50px;
     border-radius: 100%;
     border: 2px solid black;
+  }
+
+  .arrownxpt {
+    order: 2;
+    position: relative;
+    align-self: center;
   }
 
   .firstprev {
